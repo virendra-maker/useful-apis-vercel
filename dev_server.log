@@ -32,3 +32,11 @@ https://nextjs.org/telemetry
  GET /api/yt?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ 500 in 3.7s (compile: 6ms, render: 3.7s)
  GET /api/yt?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ 500 in 20ms (compile: 6ms, render: 14ms)
  GET /api/download?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ 500 in 2.2s (compile: 8ms, render: 2.2s)
+ GET /api/xhamster?url=https://xhamster.com/videos/are-there-no-more-rooms-in-the-hotel-i-have-to-share-a-bed-with-my-stepmother-xhWE98H 500 in 11ms (compile: 7ms, render: 4ms)
+Provider https://api.vreden.web.id/api/xhdl?url=https%3A%2F%2Fxhamster.com%2Fvideos%2Fare-there-no-more-rooms-in-the-hotel-i-have-to-share-a-bed-with-my-stepmother-xhWE98H failed: Request failed with status code 404
+Provider https://api.boxi.my.id/api/download/xhamster?url=https%3A%2F%2Fxhamster.com%2Fvideos%2Fare-there-no-more-rooms-in-the-hotel-i-have-to-share-a-bed-with-my-stepmother-xhWE98H failed: getaddrinfo ENOTFOUND api.boxi.my.id
+Provider https://widipe.com/download/xhamster?url=https%3A%2F%2Fxhamster.com%2Fvideos%2Fare-there-no-more-rooms-in-the-hotel-i-have-to-share-a-bed-with-my-stepmother-xhWE98H failed: getaddrinfo ENOTFOUND widipe.com
+ GET /api/xhamster?url=https://xhamster.com/videos/are-there-no-more-rooms-in-the-hotel-i-have-to-share-a-bed-with-my-stepmother-xhWE98H 500 in 3.3s (compile: 7ms, render: 3.3s)
+ GET /api/test_xh 500 in 2.5s (compile: 11ms, render: 2.5s)
+ GET /api/test_xh_v1 500 in 3.0s (compile: 8ms, render: 2.9s)
+ GET /api/test_ph_v1 500 in 2.6s (compile: 8ms, render: 2.6s)
