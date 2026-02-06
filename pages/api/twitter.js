@@ -5,9 +5,13 @@ export default async function handler(req, res) {
   if (!url) return res.status(400).json({ error: 'URL is required' });
 
   try {
-    const response = await axios.get(`https://api.vreden.web.id/api/twitterdl?url=${url}`);
+    const response = await axios.post('https://api.cobalt.tools/api/json', {
+      url: url,
+    }, {
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+    });
     res.status(200).json(response.data);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch Twitter content' });
+    res.status(500).json({ error: 'Twitter fetch failed', details: error.message });
   }
 }

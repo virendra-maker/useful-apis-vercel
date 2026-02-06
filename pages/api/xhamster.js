@@ -5,10 +5,10 @@ export default async function handler(req, res) {
   if (!url) return res.status(400).json({ error: 'URL is required' });
 
   try {
-    // Using a public adult site downloader API logic for xHamster
-    const response = await axios.get(`https://api.vreden.web.id/api/xhdl?url=${url}`);
+    // Using a more reliable adult content downloader API
+    const response = await axios.get(`https://api.boxi.my.id/api/download/xhamster?url=${encodeURIComponent(url)}`);
     res.status(200).json(response.data);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch xHamster content' });
+    res.status(500).json({ error: 'Failed to fetch xHamster content', details: error.message });
   }
 }
